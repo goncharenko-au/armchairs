@@ -1,0 +1,60 @@
+.promo {
+    min-height: 580px;
+    background-image: url("../img/first_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 72px 0 60px;
+
+    &__title {
+        color: $grey-color;
+        max-width: 600px;
+        font-size: 41px;
+        font-weight: 700;
+        line-height: 50px;
+        margin: 0 0 0 auto;
+        text-align: right;
+        margin-bottom: 12px;
+    }
+    &__subtitle {
+        color: $main-color;
+        font-size: 25px;
+        text-align: right;
+        margin: 0 0 67px 0;
+    }
+    &__form {
+        max-width: 300px;
+        padding: 38px 38px 30px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 0px 38px 0px rgba(104, 176, 201, 0.34);
+        margin: 0 0 0 auto;
+        &-title {
+            color: $main-color;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        &-label {
+            font-size: 11px;
+            font-weight: 300;
+            display: block;
+            margin-bottom: 20px;
+        }
+        &-input {
+            width: 100%;
+            padding: 13px;
+            font-size: 13px;
+            border: 1px solid rgb(232, 232, 232);
+            border-radius: 30px;
+            background-color: transparent;
+            color: $grey-color;
+            margin-bottom: 12px;
+            &::placeholder {
+                color: rgb(232, 232, 232);
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.header {
+    min-height: 100px;
+    padding: 14px 0 8px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        &-img {
+            width: 108px;
+            height: 75px;
+            img {
+                max-width: 100%;
+                object-fit: contain;
+            }
+        }
+        &-name {
+            color: $main-color;
+            font-family: "Source Sans Pro";
+            font-size: 22px;
+        }
+    }
+    &__tel {
+        color: $grey-color;
+        font-weight: 700;
+        font-size: 24px;
+        text-decoration: none;
+        line-height: 24px;
+        display: block;
+        padding: 5px 0 0;
+    }
+    &__call {
+        color: $main-color;
+        font-size: 13px;
+        text-decoration: underline;
+        display: inline-block;
+        padding-left: 50px;
+    }
+}

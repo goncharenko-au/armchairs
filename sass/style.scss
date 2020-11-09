@@ -1,0 +1,23 @@
+@import "libs/normalize";
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+* {
+    box-sizing: border-box;
+    font-family: "Museo Sans Cyrl";
+    font-size: 18px;
+    font-weight: 500;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/button";
