@@ -1,0 +1,19 @@
+.footer {
+    min-height: 111px;
+    padding: 20px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__policy {
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__code {
+        text-align: right;
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
