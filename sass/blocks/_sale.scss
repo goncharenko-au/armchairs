@@ -1,0 +1,121 @@
+.sale {
+    min-height: 490px;
+    padding: 65px 0 39px;
+    background-image: url("../img/second_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    &__price {
+        background-color: #fff;
+        padding: 40px 0 42px;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        text-align: center;
+        position: absolute;
+        top: 190px;
+        left: 41%;
+        &:before {
+            content: "";
+            position: absolute;
+            background-image: url("../icons/arrow-sale.png");
+            width: 155px;
+            height: 63px;
+            top: 110%;
+            left: 60%;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 120px;
+            background-color: rgb(232, 232, 232);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 20;
+        }
+        &-old {
+            font-weight: 300;
+            text-decoration: line-through;
+            margin-bottom: 20px;
+        }
+        &-new {
+            color: #d04545;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+
+    &__inner {
+        max-width: 400px;
+        margin: 0 0 0 auto;
+    }
+    &__title {
+        font-size: 55px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 55px;
+        margin: 0 0 45px;
+        span {
+            display: block;
+            font-size: 26px;
+            font-weight: 900;
+            line-height: 45px;
+            &:nth-child(2) {
+                color: $main-color;
+                font-size: 25px;
+                line-height: 35px;
+                text-transform: lowercase;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 100px;
+                    background-image: url("../icons/present.png");
+                    width: 22px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    &__promotion {
+        max-width: 275px;
+        padding: 30px 30px 25px;
+        border: 5px solid #fff;
+        border-radius: 30px;
+        margin: 0 auto;
+        text-align: center;
+        &-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 35px;
+            text-align: left;
+        }
+        &-text {
+            color: #d04545;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        &-date {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 48px;
+            background-image: url("../icons/calendar.png");
+            background-position: center center;
+            width: 48px;
+            height: 43px;
+        }
+        &-btn {
+            padding: 18px 60px;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.about {
+    min-height: 545px;
+    padding: 130px 0 50px;
+    &__inner {
+        padding: 0 70px;
+        display: grid;
+        grid-template-rows: repeat(2, 125px);
+        grid-template-columns: 240px auto 240px;
+        row-gap: 80px;
+    }
+    &__item {
+        max-width: 240px;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &_one {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            text-align: right;
+            &:before {
+                background-image: url("../icons/arrow-top-left.png");
+                width: 122px;
+                height: 109px;
+                top: 7px;
+                left: 105%;
+            }
+        }
+        &_second {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            text-align: right;
+            &:before {
+                background-image: url("../icons/arrow-bottom-left.png");
+                width: 143px;
+                height: 53px;
+                top: -30px;
+                left: 90%;
+            }
+        }
+        &_third {
+            grid-column: 3/4;
+            grid-row: 1/2;
+            &:before {
+                background-image: url("../icons/arrow-top-right.png");
+                width: 148px;
+                height: 77px;
+                top: -30px;
+                left: -145px;
+            }
+        }
+        &_fourth {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            &:before {
+                background-image: url("../icons/arrow-bottom-right.png");
+                width: 143px;
+                height: 53px;
+                top: 7px;
+                left: -154px;
+            }
+        }
+        &-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: $main-color;
+            margin: 0;
+        }
+        &-descr {
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+    &__img {
+        justify-self: center;
+        width: 181px;
+        height: 333px;
+        object-fit: cover;
+        img {
+            max-width: 100%;
+        }
+    }
+}

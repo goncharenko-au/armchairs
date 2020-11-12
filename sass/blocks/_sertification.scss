@@ -1,0 +1,70 @@
+.sertification {
+    min-height: 875px;
+    padding: 60px 0 7px;
+    background-image: linear-gradient(rgb(256, 256, 256) 0%, rgb(236, 243, 248) 100%);
+    &__inner {
+        display: grid;
+        grid-template-rows: 125px;
+        grid-template-columns: repeat(4, 235px);
+        margin-bottom: 164px;
+    }
+    &__item {
+        background-image: url("../icons/armchair_icon.png");
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position: top center;
+        text-align: center;
+        span {
+            display: block;
+            font-size: 48px;
+            color: $main-color;
+            font-weight: 700;
+            line-height: 120px;
+        }
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 0 85px;
+    }
+    &__about {
+        padding: 0 90px;
+        display: flex;
+        justify-content: space-between;
+        &-img {
+            width: 244px;
+            height: 324px;
+            object-fit: cover;
+            img {
+                max-width: 100%;
+            }
+        }
+        &-inner {
+            max-width: 380px;
+        }
+        &-important {
+            font-size: 22px;
+            font-weight: 700;
+            color: $main-color;
+            padding-left: 55px;
+            margin-bottom: 43px;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                background-image: url("../icons/important.png");
+                width: 46px;
+                height: 41px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+        }
+        &-descr {
+            font-weight: 500;
+            margin: 0;
+            margin-bottom: 27px;
+        }
+    }
+}
