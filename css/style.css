@@ -1146,4 +1146,249 @@ template {
 .request__btn {
   width: 100%;
 }
+
+.comparison {
+  min-height: 520px;
+  padding: 57px 0 70px;
+}
+
+.comparison__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 30px;
+  margin-bottom: 38px;
+}
+
+.comparison__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 20px;
+}
+
+.comparison__title_regular {
+  text-align: right;
+}
+
+.comparison__title_frameless {
+  color: #68b0c9;
+}
+
+.comparison__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px auto 320px;
+      grid-template-columns: 320px auto 320px;
+  -ms-grid-rows: (minmax(35px, auto))[4];
+      grid-template-rows: repeat(4, minmax(35px, auto));
+  row-gap: 20px;
+}
+
+.comparison__item {
+  color: #939393;
+  font-size: 15px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  text-align: right;
+  position: relative;
+  padding-right: 100px;
+}
+
+.comparison__item:before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/arrow-comparison-grey.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 235px;
+  width: 81px;
+  height: 41px;
+}
+
+.comparison__item:first-child {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.comparison__item:first-child:before {
+  top: 5px;
+}
+
+.comparison__item:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.comparison__item:nth-child(2):before {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  top: -3px;
+}
+
+.comparison__item:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.comparison__item:nth-child(3):before {
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  top: -20px;
+}
+
+.comparison__item:nth-child(4) {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.comparison__item:nth-child(4):before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -28px;
+}
+
+.comparison__item:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.comparison__item:nth-child(6):before {
+  top: 5px;
+}
+
+.comparison__item:nth-child(7) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.comparison__item:nth-child(7):before {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  top: -3px;
+}
+
+.comparison__item:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.comparison__item:nth-child(8):before {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  top: -20px;
+}
+
+.comparison__item:nth-child(9) {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.comparison__item:nth-child(9):before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -28px;
+}
+
+.comparison__item_blue {
+  color: #68b0c9;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  text-align: left;
+  padding: 0 0 0 100px;
+}
+
+.comparison__item_blue:before {
+  background-image: url("../icons/arrow-comparison-blue.png");
+  top: 0;
+  left: 0;
+}
+
+.comparison__img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 200px;
+  height: 299px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.comparison__img img {
+  max-width: 100%;
+}
+
+.address {
+  min-height: 420px;
+  padding: 50px 0;
+  background-color: #ecf3f8;
+}
+
+.address__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.address__geolocation {
+  width: 460px;
+  height: 320px;
+  border-radius: 10%;
+}
+
+.address__info {
+  max-width: 320px;
+  text-align: center;
+  padding: 80px 0 0;
+  margin: 0 auto;
+}
+
+.address__info-text {
+  font-weight: 300;
+  font-size: 16px;
+  position: relative;
+}
+
+.address__info-text:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 32px;
+  background-image: url("../icons/geo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.address__info span {
+  font-weight: 700;
+  font-size: 20px;
+  color: #68b0c9;
+  display: block;
+  margin: 20px 0 45px;
+}
+
+.address__btn {
+  margin-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
