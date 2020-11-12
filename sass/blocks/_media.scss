@@ -1,0 +1,93 @@
+@media (max-width: 1023px) {
+}
+@media (max-width: 991px) {
+    // .container {
+    //     max-width: 767px;
+    //     padding: 0 10px;
+    //     margin: 0 auto;
+    // }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 740px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    .header {
+        min-height: 20px;
+        padding: 5px 0;
+        &__logo {
+            &-img {
+                width: 80%;
+                object-fit: contain;
+            }
+        }
+        &__tel {
+            font-size: 20px;
+            text-align: right;
+        }
+    }
+    .promo {
+        &__title {
+            font-size: 35px;
+            line-height: 40px;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 423px) {
+    .container {
+        max-width: 400px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    .header {
+        min-height: 20px;
+        padding: 5px 0;
+        &__logo {
+            &-img {
+                width: 70%;
+                object-fit: contain;
+            }
+        }
+        &__tel {
+            font-size: 16px;
+            text-align: right;
+        }
+        &__call {
+            text-align: right;
+        }
+    }
+    .promo {
+        background-position: 40% center;
+        &__title {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            max-width: 200px;
+            margin-left: auto;
+            font-size: 17px;
+        }
+        &__form {
+            &-title {
+                font-size: 16px;
+                &-btn {
+                    font-size: 12px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 334px) {
+    .promo {
+        &__form {
+            margin: 0 auto;
+        }
+    }
+}
