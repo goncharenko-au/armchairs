@@ -1020,4 +1020,130 @@ template {
 .about__img img {
   max-width: 100%;
 }
+
+.request {
+  min-height: 348px;
+  padding: 53px 0 0;
+  background-image: url("../img/third_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.request__price {
+  background-color: #fff;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  text-align: center;
+  position: absolute;
+  top: 75px;
+  left: 34%;
+}
+
+.request__price:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 125px;
+  background-color: #e8e8e8;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 20;
+}
+
+.request__price-sale {
+  font-size: 17px;
+  font-weight: 700;
+  color: #68b0c9;
+  margin: 40px 0 20px;
+}
+
+.request__price-old {
+  font-weight: 300;
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.request__price-new {
+  color: #d04545;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.request__inner {
+  max-width: 257px;
+  margin: 0 100px 0 auto;
+  text-align: center;
+}
+
+.request__label {
+  font-size: 20px;
+  font-weight: 700;
+  max-width: 234px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+.request__label span {
+  display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 30px;
+  color: #68b0c9;
+  background-color: #fff;
+  margin: 10px 0 25px;
+  position: relative;
+}
+
+.request__label span:after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 105px;
+  background-image: url("../icons/request-arrow.png");
+  top: 50%;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  left: 115%;
+}
+
+.request__input {
+  width: 100%;
+  padding: 13px;
+  font-size: 13px;
+  border: 1px solid #e8e8e8;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #535353;
+  margin-bottom: 25px;
+}
+
+.request__input::-webkit-input-placeholder {
+  color: #e8e8e8;
+  text-align: center;
+}
+
+.request__input:-ms-input-placeholder {
+  color: #e8e8e8;
+  text-align: center;
+}
+
+.request__input::-ms-input-placeholder {
+  color: #e8e8e8;
+  text-align: center;
+}
+
+.request__input::placeholder {
+  color: #e8e8e8;
+  text-align: center;
+}
+
+.request__btn {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

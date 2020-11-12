@@ -1,0 +1,96 @@
+.request {
+    min-height: 348px;
+    padding: 53px 0 0;
+    background-image: url("../img/third_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    &__price {
+        background-color: #fff;
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+        text-align: center;
+        position: absolute;
+        top: 75px;
+        left: 34%;
+        &:after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 125px;
+            background-color: rgb(232, 232, 232);
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+        }
+        &-sale {
+            font-size: 17px;
+            font-weight: 700;
+            color: $main-color;
+            margin: 40px 0 20px;
+        }
+        &-old {
+            font-weight: 300;
+            text-decoration: line-through;
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+        &-new {
+            color: #d04545;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    &__inner {
+        max-width: 257px;
+        margin: 0 100px 0 auto;
+        text-align: center;
+    }
+    &__label {
+        font-size: 20px;
+        font-weight: 700;
+        max-width: 234px;
+        margin: 0 auto;
+        line-height: 25px;
+        span {
+            display: block;
+            font-size: inherit;
+            font-weight: inherit;
+            line-height: 30px;
+            color: $main-color;
+            background-color: #fff;
+            margin: 10px 0 25px;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 65px;
+                height: 105px;
+                background-image: url("../icons/request-arrow.png");
+                top: 50%;
+                transform: translateY(-5px);
+                left: 115%;
+            }
+        }
+    }
+    &__input {
+        width: 100%;
+        padding: 13px;
+        font-size: 13px;
+        border: 1px solid rgb(232, 232, 232);
+        border-radius: 30px;
+        background-color: #fff;
+        color: $grey-color;
+        margin-bottom: 25px;
+        &::placeholder {
+            color: rgb(232, 232, 232);
+            text-align: center;
+        }
+    }
+    &__btn {
+        width: 100%;
+    }
+}
