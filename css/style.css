@@ -803,7 +803,6 @@ template {
 }
 
 .sertification {
-  min-height: 875px;
   padding: 60px 0 7px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ecf3f8));
   background-image: linear-gradient(white 0%, #ecf3f8 100%);
@@ -813,16 +812,15 @@ template {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 125px;
-      grid-template-rows: 125px;
   -ms-grid-columns: (minmax(235px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+      grid-template: 125px/repeat(auto-fit, minmax(235px, 1fr));
   margin-bottom: 164px;
 }
 
 .sertification__item {
   background-image: url("../icons/armchair_icon.png");
   background-repeat: no-repeat;
-  background-size: 35%;
+  background-size: 92px;
   background-position: top center;
   text-align: center;
 }
@@ -880,6 +878,7 @@ template {
   content: "";
   position: absolute;
   background-image: url("../icons/important.png");
+  background-repeat: no-repeat;
   width: 46px;
   height: 41px;
   top: 50%;
@@ -1499,6 +1498,40 @@ template {
   width: 100%;
 }
 
+@media (max-width: 960px) {
+  .sertification__inner {
+    -ms-grid-rows: 155px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template: 155px/repeat(4, 1fr);
+    margin-bottom: 80px;
+    gap: 20px;
+  }
+  .sertification__item span {
+    font-size: 40px;
+    line-height: 130px;
+  }
+  .sertification__title {
+    margin-bottom: 40px;
+  }
+  .sertification__about {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sertification__about-img {
+    width: 230px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .sertification__about-important {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .sertification__about-descr {
+    margin-bottom: 16px;
+  }
+}
+
 @media (max-width: 925px) {
   .advantages {
     min-height: 1100px;
@@ -1542,6 +1575,12 @@ template {
     top: 105%;
     left: 60%;
   }
+  .sertification__about {
+    padding: 0 20px;
+  }
+  .sertification__about-inner {
+    max-width: 450px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1571,7 +1610,7 @@ template {
     font-size: 20px;
   }
   .advantages {
-    padding-top: 30px;
+    padding: 30px 0;
   }
   .advantages__title {
     font-size: 30px;
@@ -1671,6 +1710,49 @@ template {
   .sale__promotion {
     margin: 180px auto 0 0;
   }
+  .sertification__title {
+    font-size: 30px;
+  }
+  .sertification__inner {
+    -ms-grid-rows: (155px)[2];
+    -ms-grid-columns: (1fr)[2];
+        grid-template: repeat(2, 155px)/repeat(2, 1fr);
+    gap: 20px 110px;
+    margin-bottom: 100px;
+  }
+  .sertification__item span {
+    font-size: 40px;
+    line-height: 130px;
+  }
+  .sertification__item:first-child {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .sertification__item:nth-child(2) {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .sertification__item:nth-child(3) {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .sertification__item:nth-child(4) {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .sertification__about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sertification__about-inner {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .sertification__about-descr {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 423px) {
@@ -1765,6 +1847,37 @@ template {
   }
   .sale__promotion {
     margin: 180px auto 0 0;
+  }
+  .sertification__inner {
+    gap: 20px 60px;
+    margin-bottom: 50px;
+  }
+  .sertification__item {
+    font-size: 14px;
+  }
+  .sertification__item span {
+    font-size: 30px;
+  }
+  .sertification__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .sertification__about-inner {
+    max-width: 100%;
+  }
+  .sertification__about-important {
+    font-size: 16px;
+    padding-left: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .sertification__about-important:before {
+    display: none;
+  }
+  .sertification__about-descr {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
 

@@ -1,5 +1,37 @@
-@media (max-width: 1023px) {
+@media (max-width: 960px) {
+    .sertification {
+        &__inner {
+            grid-template: 155px / repeat(4, 1fr);
+            margin-bottom: 80px;
+            gap: 20px;
+        }
+        &__item {
+            span {
+                font-size: 40px;
+                line-height: 130px;
+            }
+        }
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__about {
+            // padding: 0 50px;
+            align-items: center;
+            &-img {
+                width: 230px;
+                object-fit: contain;
+            }
+            &-important {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            &-descr {
+                margin-bottom: 16px;
+            }
+        }
+    }
 }
+
 @media (max-width: 925px) {
     .advantages {
         min-height: 1100px;
@@ -43,6 +75,14 @@
             }
         }
     }
+    .sertification {
+        &__about {
+            padding: 0 20px;
+            &-inner {
+                max-width: 450px;
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
     .container {
@@ -74,7 +114,7 @@
         }
     }
     .advantages {
-        padding-top: 30px;
+        padding: 30px 0;
         &__title {
             font-size: 30px;
             padding-bottom: 15px;
@@ -161,6 +201,44 @@
         }
         &__promotion {
             margin: 180px auto 0 0;
+        }
+    }
+    .sertification {
+        &__title {
+            font-size: 30px;
+        }
+        &__inner {
+            grid-template: repeat(2, 155px) / repeat(2, 1fr);
+            gap: 20px 110px;
+            margin-bottom: 100px;
+        }
+        &__item {
+            span {
+                font-size: 40px;
+                line-height: 130px;
+            }
+            &:first-child {
+                justify-self: end;
+            }
+            &:nth-child(2) {
+                justify-self: start;
+            }
+            &:nth-child(3) {
+                justify-self: end;
+            }
+            &:nth-child(4) {
+                justify-self: start;
+            }
+        }
+        &__about {
+            flex-direction: column;
+            &-inner {
+                max-width: 100%;
+                margin-top: 10px;
+            }
+            &-descr {
+                font-size: 17px;
+            }
         }
     }
 }
@@ -261,6 +339,41 @@
         }
         &__promotion {
             margin: 180px auto 0 0;
+        }
+    }
+    .sertification {
+        &__inner {
+            gap: 20px 60px;
+            margin-bottom: 50px;
+        }
+        &__item {
+            font-size: 14px;
+            span {
+                font-size: 30px;
+            }
+        }
+        &__title {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        &__about {
+            &-inner {
+                max-width: 100%;
+            }
+            &-important {
+                font-size: 16px;
+                padding-left: 0;
+                margin-bottom: 15px;
+                text-align: center;
+                &:before {
+                    display: none;
+                }
+            }
+            &-descr {
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
         }
     }
 }

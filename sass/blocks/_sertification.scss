@@ -1,17 +1,16 @@
 .sertification {
-    min-height: 875px;
+    // min-height: 875px;
     padding: 60px 0 7px;
     background-image: linear-gradient(rgb(256, 256, 256) 0%, rgb(236, 243, 248) 100%);
     &__inner {
         display: grid;
-        grid-template-rows: 125px;
-        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+        grid-template: 125px / repeat(auto-fit, minmax(235px, 1fr));
         margin-bottom: 164px;
     }
     &__item {
         background-image: url("../icons/armchair_icon.png");
         background-repeat: no-repeat;
-        background-size: 35%;
+        background-size: 92px;
         background-position: top center;
         text-align: center;
         span {
@@ -54,6 +53,7 @@
                 content: "";
                 position: absolute;
                 background-image: url("../icons/important.png");
+                background-repeat: no-repeat;
                 width: 46px;
                 height: 41px;
                 top: 50%;
