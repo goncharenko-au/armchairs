@@ -5,7 +5,7 @@
     &__inner {
         display: grid;
         grid-template-rows: 125px;
-        grid-template-columns: repeat(4, 235px);
+        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
         margin-bottom: 164px;
     }
     &__item {

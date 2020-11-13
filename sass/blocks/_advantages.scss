@@ -11,6 +11,7 @@
         padding: 110px 90px 0;
         display: flex;
         justify-content: space-between;
+        margin: 0;
         &-descr {
             max-width: 400px;
         }
@@ -21,6 +22,7 @@
             padding-top: 50px;
             margin-bottom: 30px;
             position: relative;
+            max-width: 380px;
             &:before {
                 position: absolute;
                 content: "";
@@ -34,6 +36,7 @@
             }
             &.right {
                 text-align: right;
+                margin-left: auto;
                 &:before {
                     position: absolute;
                     content: "";
