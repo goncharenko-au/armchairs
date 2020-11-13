@@ -33,6 +33,16 @@
             }
         }
     }
+    .sale {
+        &__price {
+            top: 150px;
+            left: 30%;
+            &:before {
+                top: 105%;
+                left: 60%;
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
     .container {
@@ -118,6 +128,41 @@
             }
         }
     }
+    .sale {
+        background-position: 20% 0;
+        &__inner {
+            margin-left: 0;
+        }
+        &__title {
+            font-size: 32px;
+            text-align: left;
+            line-height: 30px;
+            span {
+                font-size: 20px;
+                &:nth-child(2) {
+                    font-size: 18px;
+                    line-height: 20px;
+                    padding-left: 30px;
+                    &:before {
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                    }
+                }
+            }
+        }
+        &__price {
+            top: 170px;
+            &:before {
+                top: 60%;
+                left: -50%;
+                transform: rotate(80deg);
+            }
+        }
+        &__promotion {
+            margin: 180px auto 0 0;
+        }
+    }
 }
 
 @media (max-width: 423px) {
@@ -165,7 +210,7 @@
         }
     }
     .advantages {
-        min-height: 450px;
+        min-height: 480px;
         padding-top: 40px;
         &__title {
             font-size: 22px;
@@ -209,6 +254,15 @@
             }
         }
     }
+    .sale {
+        &__price {
+            top: 170px;
+            left: 35%;
+        }
+        &__promotion {
+            margin: 180px auto 0 0;
+        }
+    }
 }
 
 @media (max-width: 334px) {
@@ -218,6 +272,7 @@
         }
     }
     .advantages {
+        min-height: 470px;
         &__item {
             &-title {
                 font-size: 16px;
@@ -225,6 +280,16 @@
             &-text {
                 font-size: 13px;
             }
+        }
+    }
+    .sale {
+        background-position: 21% 0;
+        padding-top: 40px;
+        &__promotion {
+            margin: 190px auto 0;
+        }
+        &__price {
+            top: 150px;
         }
     }
 }
