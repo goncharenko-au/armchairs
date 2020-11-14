@@ -1373,12 +1373,13 @@ template {
           transform: translateX(-50%);
 }
 
-.address__info span {
+.address__info address {
   font-weight: 700;
   font-size: 20px;
   color: #68b0c9;
   display: block;
   margin: 20px 0 45px;
+  font-style: normal;
 }
 
 .address__btn {
@@ -1846,6 +1847,40 @@ template {
   .request__label span:after {
     display: none;
   }
+  .address {
+    padding: 30px 0;
+  }
+  .address__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .address__geolocation {
+    width: 100%;
+    height: 250px;
+    border-radius: 0;
+  }
+  .address__info {
+    max-width: 100%;
+    padding-top: 55px;
+  }
+  .address__info-text {
+    font-size: 15px;
+  }
+  .address__info-text:before {
+    top: -40px;
+  }
+  .address__info address {
+    font-size: 18px;
+    margin: 10px 0 20px;
+  }
+  .address__btn {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1953,7 +1988,7 @@ template {
   }
 }
 
-@media (max-width: 480px) and (max-width: 423px) {
+@media (max-width: 423px) {
   .container {
     max-width: 400px;
     padding: 0 15px;
@@ -2095,9 +2130,6 @@ template {
   .request__input {
     margin-bottom: 23px;
   }
-}
-
-@media (max-width: 480px) {
   .comparison {
     padding: 10px 0 30px;
   }
@@ -2167,6 +2199,20 @@ template {
     max-width: 55%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .address__geolocation {
+    width: 100%;
+    height: 200px;
+  }
+  .address__info-text {
+    font-size: 14px;
+  }
+  .address__info-text:before {
+    height: 28px;
+    top: -35px;
+  }
+  .address address {
+    font-size: 16px;
   }
 }
 
