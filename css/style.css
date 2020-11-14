@@ -1387,7 +1387,6 @@ template {
 }
 
 .footer {
-  min-height: 111px;
   padding: 20px 0;
 }
 
@@ -1881,6 +1880,20 @@ template {
   .address__btn {
     margin-top: 10px;
   }
+  .footer {
+    padding: 17px 0;
+  }
+  .footer__logo-img {
+    width: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .footer__policy {
+    text-align: right;
+  }
+  .footer__code {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1976,6 +1989,9 @@ template {
 @media (max-width: 530px) {
   .request__price {
     left: 8%;
+  }
+  .footer__code {
+    display: none;
   }
 }
 
@@ -2213,6 +2229,17 @@ template {
   }
   .address address {
     font-size: 16px;
+  }
+  .footer {
+    padding: 10px 0;
+  }
+  .footer__logo-img {
+    width: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .footer__code {
+    display: none;
   }
 }
 
