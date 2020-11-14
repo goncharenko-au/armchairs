@@ -50,7 +50,8 @@
             <form action="" class="promo__form">
                 <div class="promo__form-title">Нет времени читать?</div>
                 <div class="promo__form-label">Оставляйте номер, мы вам перезвоним!</div>
-                <input type="tel" required class="promo__form-input" placeholder="Ваш телефон">
+                <input type="tel" class="promo__form-input" data-validate-field="tel" required placeholder="Ваш телефон"
+                    name="tel">
                 <button class="promo__form-btn btn">ПЕРЕЗВОНИТЕ МНЕ</button>
             </form>
         </div>
@@ -202,8 +203,12 @@
                     и получите
                     <span>бесплатную доставку!</span>
                 </div>
-                <input type="tel" required class="request__input" placeholder="Ваш телефон">
-                <button class="request__btn btn">ПЕРЕЗВОНИТЕ МНЕ</button>
+                <form action="" class="request__form">
+                    <input type="tel" class="request__input" required data-validate-field="tel"
+                        placeholder="Ваш телефон" name="tel">
+                    <button class="request__btn btn">ПЕРЕЗВОНИТЕ МНЕ</button>
+                </form>
+
             </div>
         </div>
     </section>
@@ -288,18 +293,20 @@
 
     <div class="modal__call">
         <div class="container">
-            <form action="POST" class="modal__form">
+            <form action="" class="modal__form">
                 <span class="modal__close">&#10006;</span>
                 <div class="modal__title">Обратный звонок</div>
                 <div class="modal__label">Оставляйте номер, мы вам перезвоним!</div>
-                <input type="tel" class="modal__input" required placeholder="Ваш телефон">
+                <input type="tel" class="modal__input" data-validate-field="tel" required placeholder="Ваш телефон"
+                    name="tel">
                 <button class="modal__btn btn">ПЕРЕЗВОНИТЕ МНЕ</button>
             </form>
         </div>
+    </div>
 
     </div>
-    </div>
     <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
