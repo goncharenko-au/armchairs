@@ -608,6 +608,7 @@
         padding: 10px 0 30px;
         &__titles {
             margin-bottom: 10px;
+            padding-left: 0;
         }
         &__title {
             font-size: 20px;
@@ -697,8 +698,14 @@
 }
 @media (max-width: 334px) {
     .promo {
+        &__subtitle {
+            margin-bottom: 20px;
+        }
         &__form {
             margin: 0 auto;
+            &-btn {
+                padding: 15px 39px;
+            }
         }
     }
     .advantages {

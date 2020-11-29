@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //modal
     call.addEventListener("click", function (e) {
         callForm.style.display = "block";
+        document.body.style.overflow = "hidden";
         e.preventDefault();
     });
 
